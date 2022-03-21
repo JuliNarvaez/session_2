@@ -29,11 +29,15 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Session 2",
-      template: "./public/index.html"
+      template: "./public/index.html",
     }),
   ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
+  },
+  devServer: {
+    liveReload: true,
+    static: "./dist",
   },
 };

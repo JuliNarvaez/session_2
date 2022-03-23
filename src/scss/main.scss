@@ -18,6 +18,10 @@ body {
   );
   background-repeat: no-repeat;
 }
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+}
 
 .main {
   background-color: rgba(white, 0.7);
@@ -26,7 +30,7 @@ body {
   max-width: 400px;
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 25vh;
+  margin-top: 10vh;
 
   &_list {
     color: $secundary-color;

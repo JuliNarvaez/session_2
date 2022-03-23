@@ -42,6 +42,7 @@ inputNumber.addEventListener("keydown", (e) => {
       const numberPropsTwo = { ...numberProps };
       numberPropsTwo.number = 8;
       numberPropsTwo.isEven = false;
+      console.log(numberProps);
       console.log(numberPropsTwo);
     }
   }
@@ -64,5 +65,5 @@ function detectNumber(object) {
 }
 
 function reportResult(resultText) {
-  return (document.getElementById("result").innerHTML = `<p>${resultText}</p>`);
+  document.getElementById("result").innerHTML = `<p>${resultText}</p>`;
 }

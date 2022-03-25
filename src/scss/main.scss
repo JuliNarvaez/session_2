@@ -57,3 +57,17 @@ body {
     text-align: center;
   }
 }
+
+.result {
+  &_true {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  &_false {
+    color: $text-primary-color;
+    font-weight: bold;
+  }
+  &_number {
+    font-weight: bold;
+  }
+}

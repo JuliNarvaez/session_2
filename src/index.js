@@ -59,10 +59,14 @@ function numberObject(number) {
 }
 
 function detectNumber(object) {
-  return `The number ${object.number} is ${
-    object.isEven ? "EVEN" : "ODD"
+  return `The number <span class="result_number">${object.number}</span> is ${
+    object.isEven
+      ? '<span class="result_true">EVEN</span>'
+      : '<span class="result_false">ODD</span>'
   } and ${
-    object.isDivisibleByTen ? "is divisible by 10" : "isn't divisible by 10"
+    object.isDivisibleByTen
+      ? '<span class="result_true"> is divisible by 10</span>'
+      : '<span class="result_false">isn\'t divisible by 10</span>'
   }.`;
 }
 

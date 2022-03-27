@@ -23,7 +23,7 @@ div.innerHTML = `
             <h3 class="main_subtitle">Mentorship - Session 3:</h3>
             <h1 class="main_title">JS Basics and ES6</h1>
             <div class="main_container">
-                <p><strong>Introduce a number and check if is EVEN or ODD and if is divisible by 10.</strong></p>
+                <p><strong>Introduce a number and check if is <span class="result_true">EVEN</span> or <span class="result_false">ODD</span> and if is divisible by 10.</strong></p>
                 <input type="number" placeholder="Enter a number" id="numberValue"> <span>↵</span>
                 <div id="result"></div>
             </div>
